@@ -22,7 +22,8 @@ const HomePge = () => {
         delay={1}
         start={{
           transform: "translateY(550px)",
-        }}
+        }
+        }
         end={{
           transform: "translateX(0px)",
         }}
