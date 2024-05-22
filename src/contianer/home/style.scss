@@ -17,7 +17,53 @@
     position: relative;
     overflow: hidden;
     white-space: nowrap;
-    
+    animation: typingEffectAnimation 2.5s steps(30,end);
+
     }
   }
+  &__contact-me{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    button{
+        cursor: pointer;
+        padding: 10px 70px;
+        font-size: 2rem;
+        background: transparent;
+        color: var(--yellow-theme-main-color);
+               border:1.5px solid var(--yellow-theme-main-color);
+               border-radius: 4px;
+               font-weight: 500;
+               &:hover{
+                background: var(--yellow-theme-main-color);
+                color: #000000;
+               }
+    }
+  }
+}
+@media only screen and (max-width:550px){
+.home__text__wrapper h1{
+    font-size: 3rem;
+    line-height: 5rem;
+}
+}
+@media only screen and (min-width:551px) and (max-width:768px){
+    .home__text__wrapper h1{
+        font-size: 5rem;
+        line-height: 6rem;
+    } 
+}
+@media only screen and (min-width:769px) and (max-width:990px){
+    .home__text__wrapper h1{
+        font-size: 6rem;
+        line-height: 8rem;
+    }
+}
+@keyframes typingEffectAnimation {
+    from{
+        width: 0;
+    }
+    to{
+     width: 100%;   
+    }
 }
