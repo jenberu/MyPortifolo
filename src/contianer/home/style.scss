@@ -1,0 +1,23 @@
+.home {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  &__text__wrapper {
+    display: flex;
+    justify-content: center;
+    h1{
+    color: var(--yellow-theme-main-color);
+    margin: 0;
+    font-weight: 500;
+    font-size: 8rem;
+    line-height: 10rem;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    
+    }
+  }
+}
