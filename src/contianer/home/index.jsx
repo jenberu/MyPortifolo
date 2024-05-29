@@ -1,7 +1,6 @@
 import React from "react";
 import "./style.scss";
-import { BsInfoCircleFill} from 'react-icons/bs';
-import PageHeaderContent from "../../components/pageheaderContent";
+
 import { useNavigate } from "react-router-dom";
 import { Animate } from "react-simple-animate";
 const HomePge = () => {
