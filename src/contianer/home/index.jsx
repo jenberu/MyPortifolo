@@ -3,7 +3,7 @@ import "./style.scss";
 
 import { useNavigate } from "react-router-dom";
 import { Animate } from "react-simple-animate";
-const HomePge = () => {
+const Home = () => {
   const navigate = useNavigate();
   const handleNavigateTocontactMe = () => {
     navigate("/contact");
@@ -36,4 +36,4 @@ const HomePge = () => {
     </section>
   );
 };
-export default HomePge;
+export default Home;

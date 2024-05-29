@@ -1,6 +1,6 @@
 import "./App.scss";
 import {  Route, Routes } from "react-router-dom";
-import HomePge from "./contianer/home";
+import Home from "./contianer/home";
 import About from "./contianer/about";
 import ResumePge from "./contianer/resume";
 import MySkillPge from "./contianer/skills";
@@ -15,7 +15,7 @@ function App() {
       <NavBar />
       <div className="App__main-page-content">
       <Routes>
-        <Route index path="/" element={<HomePge />} />
+        <Route  path="/MyPortifolo" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/resume" element={<ResumePge />} />
         <Route path="/skill" element={<MySkillPge />} />

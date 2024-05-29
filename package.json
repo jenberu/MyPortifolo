@@ -2,7 +2,7 @@
   "name": "my-portifolo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jenberu.github.io",
+  "homepage": "https://jenberu.github.io/MyPortifolo",
   
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

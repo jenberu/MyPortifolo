@@ -7,7 +7,7 @@ import "./style.scss";
 const data = [
   {
     label: "HOME",
-    to: "/",
+    to: "/MyPortifolo",
   },
   {
     label: "ABOUT ME",
@@ -39,7 +39,7 @@ const NavBar = () => {
     <div>
       <nav className="navbar">
         <div className="navbar__continar">
-          <Link to={"/"} className="navbar__continar__logo">
+          <Link to={"/MyPortifolo"} className="navbar__continar__logo">
             <FaReact size={30} />
           </Link>
         </div>
