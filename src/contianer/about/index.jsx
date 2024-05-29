@@ -2,8 +2,12 @@ import React from "react";
 import { BsInfoCircleFill} from 'react-icons/bs';
 import PageHeaderContent from "../../components/pageheaderContent";
 import { Animate } from 'react-simple-animate';
-import { DiApple, DiAndroid } from 'react-icons/di';
-import { FaDev,FaDatabase } from 'react-icons/fa';
+import { DiDart } from 'react-icons/di';
+import { FaJava, FaDatabase } from 'react-icons/fa';
+import { SiDjango } from 'react-icons/si';
+import Image from "../../images/image.jpg";
+
+
 
 import './style.scss';
 const personalDetial = [
@@ -37,6 +41,9 @@ const About = () => {
         icon={<BsInfoCircleFill size={40}/>}
       />
       <div className="about__content">
+      <div className="about__content__image">
+        <img alt="dummy data" src={Image} />
+          </div>
         <div className="about__content__personalWrapper">
         <Animate
         play
@@ -96,14 +103,16 @@ const About = () => {
         }}
       >
           <div className="about__content__serviceWrapper__innerContent">
-          <div><FaDev size={60} color="blue" />
+          <div><FaJava size={60} color="blue" />
           </div>
-          <div><DiAndroid size={60} color="blue" /></div>
+          <div><SiDjango size={60} color="blue" /></div>
           <div><FaDatabase size={60} color="blue" /></div>
-          <div><DiApple size={60} color="blue" /></div>
+          <div><DiDart size={60} color="blue" /></div>
           </div>
         </Animate>
         </div>
+
+        
 
       
 </div>

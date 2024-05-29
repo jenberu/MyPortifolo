@@ -81,10 +81,40 @@
             }
         }
     }
+    &__image{
+        
+            height: 100%;
+            
+
+            img {
+              height: 400px;
+              object-fit: cover;
+              width: 400px;
+             border-radius: 50%;
+             border: 1.5px solid var(--yellow-theme-main-color);
+            }
+          
+    }
    } 
 }
 @keyframes rotation {
     100%{
      transform: rotate(360deg);   
+    }
+}
+@media screen and (max-width:768px) {
+    .about__content{
+        flex-direction: column;
+        &__personalWrapper,&__serviceWrapper{
+            width: 100%;
+        }
+        &__serviceWrapper{
+            margin: 10px 0px;
+            &__innerContent{
+                width: 250px;
+                height: 250px;
+                background: radial-gradient(100px, var(--yellow-theme-main-color),transparent,120%);
+            }
+        }
     }
 }
