@@ -74,7 +74,8 @@ const About = () => {
       >
         <h3 className="personalInformationHeaderText">Personal Information </h3>
         <ul>
-          {
+              {
+                //use map to create the array inside li
             personalDetial.map((item, i)=>(
               <li key={i}>
                 <span className="title">

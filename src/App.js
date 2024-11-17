@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       
-      <NavBar />
+      <NavBar/>
       <div className="App__main-page-content">
       <Routes>
         <Route  path="/MyPortifolo" element={<Home />} />

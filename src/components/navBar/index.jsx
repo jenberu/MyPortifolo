@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaBars, FaReact } from "react-icons/fa";
+import { FaBars,FaHome } from "react-icons/fa";
 import { HiX } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import "./style.scss";
@@ -31,7 +31,10 @@ const data = [
   },
 ];
 const NavBar = () => {
-  const [toggleIcon, setToggleIcon] = useState(false);
+  // array destructuring
+  const [toggleIcon, setToggleIcon] = useState(false);//this is used to handle the state of object the
+  //first argument(toggleIcon is vraible and the second argumwent(settoggleIcon is the function to set toggleIcon))
+  //the intial value for toggleIcon is false
   const handleToggleIcon = () => {
     setToggleIcon(!toggleIcon);
   };
@@ -40,14 +43,15 @@ const NavBar = () => {
       <nav className="navbar">
         <div className="navbar__continar">
           <Link to={"/MyPortifolo"} className="navbar__continar__logo">
-            <FaReact size={30} />
+            <FaHome size={30} />
           </Link>
         </div>
         <ui
           className={`navbar__continar__menu ${toggleIcon ? "active" : ""}`}
 
         >
-          {data.map((item, key) => (
+          {
+            data.map((item, key) => (
             <li key={key} className="navbar__continar__menu__item">
               <Link
                 className="navbar__continar__menu__item__links"

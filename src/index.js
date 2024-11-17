@@ -5,6 +5,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+//Router is th top level component. It encloses the entire application
 root.render(
   <React.StrictMode>
   <Router>
