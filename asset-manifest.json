@@ -1,18 +1,21 @@
 {
   "files": {
     "main.css": "/MyPortifolo/static/css/main.8821ca2a.css",
-    "main.js": "/MyPortifolo/static/js/main.356787f7.js",
+    "main.js": "/MyPortifolo/static/js/main.9aaef120.js",
     "static/media/image3.jpg": "/MyPortifolo/static/media/image3.523c3efc4d6d1c1ab7e3.jpg",
+    "static/media/shop2.jpg": "/MyPortifolo/static/media/shop2.24e5b8cc8168832b6a75.jpg",
+    "static/media/internship-portal.jpg": "/MyPortifolo/static/media/internship-portal.40c5cf006e8d4c009a0b.jpg",
+    "static/media/african-country.jpg": "/MyPortifolo/static/media/african-country.0d7d2cb1b4590f123f78.jpg",
     "static/media/image.jpg": "/MyPortifolo/static/media/image.ff788fd2474354ecf461.jpg",
     "static/media/image2.jpg": "/MyPortifolo/static/media/image2.3fb535abc0f93fb05516.jpg",
     "static/media/image4.jpg": "/MyPortifolo/static/media/image4.e52f12639449f68311e3.jpg",
     "static/media/image1.jpg": "/MyPortifolo/static/media/image1.5ea7cfc983b78e8c90be.jpg",
     "index.html": "/MyPortifolo/index.html",
     "main.8821ca2a.css.map": "/MyPortifolo/static/css/main.8821ca2a.css.map",
-    "main.356787f7.js.map": "/MyPortifolo/static/js/main.356787f7.js.map"
+    "main.9aaef120.js.map": "/MyPortifolo/static/js/main.9aaef120.js.map"
   },
   "entrypoints": [
     "static/css/main.8821ca2a.css",
-    "static/js/main.356787f7.js"
+    "static/js/main.9aaef120.js"
   ]
 }
