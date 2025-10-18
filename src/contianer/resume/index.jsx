@@ -5,6 +5,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
+import { FaArrowCircleDown } from "react-icons/fa";
 import { data } from "./utils";
 import "react-vertical-timeline-component/style.min.css";
 import "./style.scss";
@@ -19,11 +20,13 @@ const ResumePge = () => {
       {/* ✅ Download CV Button */}
       <div className="download_cv">
         <a
-          href="/Jemberu_Kassie_Resume.pdf" 
+          href="/Jemberu_Kassie_Resume.pdf"
           download="Jemberu_Kassie_Resume.pdf"
           className="px-6 py-3 bg-pink-600 text-white font-semibold rounded-full shadow-md hover:bg-pink-700 transition duration-300"
         >
-          Download My Resume
+          <span>Download My Resume </span>
+
+           <FaArrowCircleDown size={24} />
         </a>
       </div>
       <div className="timeline">
@@ -72,6 +75,7 @@ const ResumePge = () => {
             ))}
           </VerticalTimeline>
         </div>
+
         <div className="timeline__education">
           <h3 className="timeline__education__header-text"> Education</h3>
           <VerticalTimeline layout={"1-column"} lineColor="blue">

@@ -52,7 +52,10 @@ const NavBar = () => {
         >
           {
             data.map((item, key) => (
-            <li key={key} className="navbar__continar__menu__item">
+              <li key={key}
+                className="navbar__continar__menu__item"
+                onClick={handleToggleIcon}
+              >
               <Link
                 className="navbar__continar__menu__item__links"
                 to={item.to}

@@ -2,7 +2,8 @@
   height: 100%;
 }
 p {
-  font-size: 24px;
+ font-size: 1rem;
+    font-weight: 600;
 }
 a {
   text-decoration: none;
@@ -17,10 +18,12 @@ a:hover {
 .download_cv {
   display: flex;
   justify-content: center;
-  margin: 2rem 0;
+  margin: 1rem 0 0 0;
+
 
   a {
     display: inline-block;
+    
     padding: 0.75rem 2rem;
     font-size: 1rem;
     font-weight: 600;
