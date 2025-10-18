@@ -4,7 +4,7 @@ import Home from "./contianer/home";
 import About from "./contianer/about";
 import ResumePge from "./contianer/resume";
 import MySkillPge from "./contianer/skills";
-import PortifoloPage from "./contianer/portifolo";
+import ProjectsPage from "./contianer/projects";
 import ContactPage from "./contianer/contact";
 import NavBar from "./components/navBar";
 
@@ -19,7 +19,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/resume" element={<ResumePge />} />
         <Route path="/skill" element={<MySkillPge />} />
-        <Route path="/portfolo" element={<PortifoloPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
       </div>
