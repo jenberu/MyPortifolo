@@ -38,11 +38,11 @@ const MySkillPge = () => {
                     iterationCount="1"
                   >
                     <div className="progressbar-wrapper" key={j}>
-                      <p>{skillsItem.skillName}</p>
+                      <p>{skillsItem.icon && <span>{skillsItem.icon}</span>}{skillsItem.skillName}</p>
                       <Line
                         percent={skillsItem.percentage}
                         strokewidth="2"
-                        strokeColor="lightgreen"
+                        strokeColor="blue"
                         trailwidth="2"
                         strokeLinecap="square"
                       />
