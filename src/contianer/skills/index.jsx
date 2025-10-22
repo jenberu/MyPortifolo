@@ -4,7 +4,8 @@ import PageHeaderContent from "../../components/pageheaderContent";
 import { skillsData } from "./skills";
 import { Animate, AnimateKeyframes } from "react-simple-animate";
 import { Line } from "rc-progress";
-import './style.scss';
+import "./style.scss";
+import { motion } from "framer-motion";
 const MySkillPge = () => {
   return (
     <section id="skills" className="skills">
@@ -14,21 +15,18 @@ const MySkillPge = () => {
       />
       <div className="skills__content-wrapper">
         {skillsData.map((item, i) => (
-          <div key={i} className="skills__content-wrapper__inner-content">
-            <Animate
-              play
-              duration={1}
-              delay={0.3}
-              start={{
-                transform: "translateX(-200px)",
-              }}
-              end={{
-                transform: "translateX(0px)",
-              }}
-            >
-              <h3 className="skills__content-wrapper__inner-content__category-text">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
+            key={i}
+            className="skills__content-wrapper__inner-content"
+          >
+            
+              <h4 className="skills__content-wrapper__inner-content__category-text">
                 {item.label}
-              </h3>
+              </h4>
               <div>
                 {item.data.map((skillsItem, j) => (
                   <AnimateKeyframes
@@ -38,7 +36,10 @@ const MySkillPge = () => {
                     iterationCount="1"
                   >
                     <div className="progressbar-wrapper" key={j}>
-                      <p>{skillsItem.icon && <span>{skillsItem.icon}</span>}{skillsItem.skillName}</p>
+                      <p>
+                        {skillsItem.icon && <span>{skillsItem.icon}</span>}
+                        {skillsItem.skillName}
+                      </p>
                       <Line
                         percent={skillsItem.percentage}
                         strokewidth="2"
@@ -50,8 +51,7 @@ const MySkillPge = () => {
                   </AnimateKeyframes>
                 ))}
               </div>
-            </Animate>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

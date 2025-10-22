@@ -6,7 +6,7 @@ import { DiDart } from "react-icons/di";
 import { FaJava, FaDatabase, FaReact, FaNode } from "react-icons/fa";
 import { SiDjango } from "react-icons/si";
 import Image from "../../images/image.jpg";
-
+import { motion } from "framer-motion";
 import "./style.scss";
 const personalDetial = [
   {
@@ -43,77 +43,67 @@ const About = () => {
       <div className="about__content">
         <div className="about__content__image">
           <img alt="dummy data" src={Image} />
-          <Animate
-            play
-            duration={1.5}
-            delay={1}
-            start={{
-              transform: "translateX(500px)",
-            }}
-            end={{
-              transform: "translatex(0px)",
-            }}
+          <motion.div
+            initial={{ x: 200, opacity: 0 }} // Starting position (off-screen)
+            whileInView={{ x: 0, opacity: 1 }} // End position when visible
+            transition={{ duration: 1, delay: 0.5 }} // Match your timing
+            viewport={{ once: true, amount: 0.3 }} // Triggers once when 30% visible
           >
             <h3 className="personalInformationHeaderText">
-              Personal Information{" "}
+              Personal Information
             </h3>
+
             <ul>
-              {
-                //use map to create the array inside li
-                personalDetial.map((item, i) => (
-                  <li key={i}>
-                    <span className="title">{item.label} :</span>
-                    <span className="value">{item.value}</span>
-                  </li>
-                ))
-              }
+              {personalDetial.map((item, i) => (
+                <li key={i}>
+                  <span className="title">{item.label} :</span>
+                  <span className="value">{item.value}</span>
+                </li>
+              ))}
             </ul>
-          </Animate>
+          </motion.div>
         </div>
-        <div className="about__content__personalWrapper">
-          <Animate
-            play
-            duration={1.5}
-            delay={1}
-            start={{
-              transform: "translateX(-900px)",
-            }}
-            end={{
-              transform: "translatex(0px)",
-            }}
-          >
-            <h3>Fullstack Developer</h3>
-            <p>
-              I am a Full - Stack Developer specializing in Django and React. I
-              graduated with a Bachelor's degree in Software Engineering from
-              Bahir Dar University.I’m passionate about building scalable web
-              applications, crafting clean APIs, and delivering seamless user
-              experiences from front - end to back - end. .I am currently
-              working with Bahir Dar University and Safaricom Talent Cloud,
-              where I apply my skills in web development to build innovative and
-              impactful solutions.Over the years, I have developed and worked on
-              a range of exciting projects, which you can explore further in the
-              Projects section.These projects showcase my passion for technology
-              and problem - solving, as well as my ability to tackle complex
-              challenges in both front - end and back - end development, with
-              Acadamic Learng process.
-            </p>
-          </Animate>
-        </div>
+        <motion.div
+          initial={{ x: -200, opacity: 0 }} // Start far left
+          whileInView={{ x: 0, opacity: 1 }} // Slide in to position
+          transition={{ duration: 1, delay: 0.5 }} // Match your timing
+          viewport={{ once: true, amount: 0.3 }}
+          className="about__content__personalWrapper"
+        >
+          <h3>Fullstack Developer</h3>
+          <p>
+            I am a Full-Stack Developer specializing in Django and React. I
+            graduated with a Bachelor's degree in Software Engineering from
+            Bahir Dar University. I’m passionate about building scalable web
+            applications, crafting clean APIs, and delivering seamless user
+            experiences from front-end to back-end.
+          </p>
+
+          <p>
+            I am currently working with Bahir Dar University and Safaricom
+            Talent Cloud, where I apply my skills in web development to build
+            innovative and impactful solutions.
+          </p>
+
+          <p>
+            Over the years, I have developed and worked on a range of exciting
+            projects, which you can explore further in the Projects section.
+            These projects showcase my passion for technology and
+            problem-solving, as well as my ability to tackle complex challenges
+            in both front-end and back-end development, alongside continuous
+            academic learning.
+          </p>
+        </motion.div>
+
         <div className="about__content__serviceWrapper">
-          <Animate
-            play
-            duration={1.5}
-            delay={1}
-            start={{
-              transform: "translateX(600px)",
-            }}
-            end={{
-              transform: "translatex(0px)",
-            }}
+          <motion.div
+            initial={{ x: 200, opacity: 0 }} // start from the right
+            whileInView={{ x: 0, opacity: 1 }} // slide in to position
+            transition={{ duration: 1, delay: 0.5 }} // Match your timing
+            viewport={{ once: true, amount: 0.3 }} // trigger when 30% visible, once only
           >
-            {" "}
-            <h3>I spend my time to mastering Technologies like:</h3>
+            <h3>Technologies I’m mastering:</h3>
+
             <div className="about__content__serviceWrapper__innerContent">
               <div>
                 <FaJava size={60} color="blue" />
@@ -133,9 +123,8 @@ const About = () => {
               <div>
                 <DiDart size={60} color="blue" />
               </div>
-            
             </div>
-          </Animate>
+          </motion.div>
         </div>
       </div>
     </section>

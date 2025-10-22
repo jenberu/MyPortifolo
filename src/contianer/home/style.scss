@@ -1,10 +1,11 @@
 .home {
   position: relative;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  height: 100%;
+  padding-top: 80px;
   &__text__wrapper {
     display: flex;
     justify-content: center;
@@ -12,7 +13,7 @@
     color: var(--yellow-theme-main-color);
     margin: 0;
     font-weight: 500;
-    font-size: 8rem;
+    font-size: 6rem;
     line-height: 10rem;
     position: relative;
     overflow: hidden;
@@ -43,19 +44,19 @@
 }
 @media only screen and (max-width:550px){
 .home__text__wrapper h1{
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 5rem;
 }
 }
 @media only screen and (min-width:551px) and (max-width:768px){
     .home__text__wrapper h1{
-        font-size: 5rem;
+        font-size: 3rem;
         line-height: 6rem;
     } 
 }
 @media only screen and (min-width:769px) and (max-width:990px){
     .home__text__wrapper h1{
-        font-size: 6rem;
+        font-size: 4rem;
         line-height: 8rem;
     }
 }

@@ -1,29 +1,21 @@
 import "./App.scss";
-import {  Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./contianer/home";
-import About from "./contianer/about";
-import ResumePge from "./contianer/resume";
-import MySkillPge from "./contianer/skills";
-import ProjectsPage from "./contianer/projects";
-import ContactPage from "./contianer/contact";
+
 import NavBar from "./components/navBar";
+import Footer from "./components/footer/Footer";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
     <div className="App">
-      
-      <NavBar/>
-      <div className="App__main-page-content">
+      <ToastContainer position="top-right" autoClose={3000} />
+
+      <NavBar />
       <Routes>
-        <Route  path="/MyPortifolo" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/resume" element={<ResumePge />} />
-        <Route path="/skill" element={<MySkillPge />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/MyPortifolo" element={<Home />} />
       </Routes>
-      </div>
-      
+      <Footer />
     </div>
   );
 }

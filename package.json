@@ -4,11 +4,13 @@
   "private": true,
   "homepage": "https://jenberu.github.io/MyPortifolo",
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@tsparticles/engine": "^3.4.0",
     "@tsparticles/react": "^3.0.0",
+    "framer-motion": "^12.23.24",
     "rc-progress": "^4.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -16,6 +18,7 @@
     "react-router-dom": "^6.23.1",
     "react-scripts": "5.0.1",
     "react-simple-animate": "^3.5.2",
+    "react-toastify": "^11.0.5",
     "react-vertical-timeline-component": "^3.6.0",
     "sass": "^1.77.2",
     "web-vitals": "^2.1.4"

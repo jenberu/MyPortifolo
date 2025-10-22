@@ -4,8 +4,7 @@
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     padding: 20px;
     width: 100%;
-    border-bottom: 1px dashed var(--yellow-theme-main-color);
-
+    overflow: hidden;
     &__image {
       display: flex;
       flex-direction: column;
@@ -51,7 +50,7 @@
 
       p {
         color: var(--yellow-theme-sub-text-color);
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         line-height: 1.65;
         padding-bottom: 20px;
       }

@@ -1,7 +1,7 @@
 .skills {
   &__content-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     padding: 20px;
     gap: 20px;
     &__inner-content {
@@ -14,7 +14,7 @@
       &__category-text {
         display: inline-block;
         color: var(--yellow-theme-main-color);
-        font-size: 22px;
+        font-size: 1.2rem;
         font-weight: 700;
         line-height: 1rem;
         letter-spacing: 0.5px;
@@ -42,7 +42,7 @@
         width: 100%;
       }
       .progressbar-wrapper {
-        padding: 50px 0px 0px 0px;
+        padding: 20px 0px 0px 0px;
         span{
             background-color: aqua;
             color: black;
@@ -50,7 +50,7 @@
             font-weight: 600;
         }
         p {
-          font-size: 1.6rem;
+          font-size: 1.2rem;
           margin: 0 0 10px;
           font-weight: 500;
           text-transform: uppercase;
