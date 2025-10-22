@@ -2,7 +2,6 @@
   "name": "my-portifolo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jenberu.github.io/MyPortifolo",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@testing-library/jest-dom": "^5.17.0",
