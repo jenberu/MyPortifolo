@@ -48,6 +48,22 @@
     line-height: 5rem;
 }
 }
+@media only screen and (max-width:480px){
+    .home {
+        width: 100%;
+        margin: 0;
+        a{
+            padding: 10px;
+        }
+    }
+.home__text__wrapper h1{
+    font-size: 1.5rem;
+    line-height: 3rem;
+    animation: none;
+     white-space: wrap;
+
+}
+}
 @media only screen and (min-width:551px) and (max-width:768px){
     .home__text__wrapper h1{
         font-size: 3rem;

@@ -1,11 +1,9 @@
-import React from "react";
 import { BsInfoCircleFill } from "react-icons/bs";
 import PageHeaderContent from "../../components/pageheaderContent";
-import { Animate } from "react-simple-animate";
 import { DiDart } from "react-icons/di";
 import { FaJava, FaDatabase, FaReact, FaNode } from "react-icons/fa";
 import { SiDjango } from "react-icons/si";
-import Image from "../../images/image.jpg";
+import Image from "../../images/profileImg.png";
 import { motion } from "framer-motion";
 import "./style.scss";
 const personalDetial = [
@@ -44,7 +42,7 @@ const About = () => {
         <div className="about__content__image">
           <img alt="dummy data" src={Image} />
           <motion.div
-            initial={{ x: 200, opacity: 0 }} // Starting position (off-screen)
+            initial={{ x: 100, opacity: 0 }} // Starting position (off-screen)
             whileInView={{ x: 0, opacity: 1 }} // End position when visible
             transition={{ duration: 1, delay: 0.5 }} // Match your timing
             viewport={{ once: true, amount: 0.3 }} // Triggers once when 30% visible
@@ -64,7 +62,7 @@ const About = () => {
           </motion.div>
         </div>
         <motion.div
-          initial={{ x: -200, opacity: 0 }} // Start far left
+          initial={{ x: -100, opacity: 0 }} // Start far left
           whileInView={{ x: 0, opacity: 1 }} // Slide in to position
           transition={{ duration: 1, delay: 0.5 }} // Match your timing
           viewport={{ once: true, amount: 0.3 }}
@@ -97,7 +95,7 @@ const About = () => {
 
         <div className="about__content__serviceWrapper">
           <motion.div
-            initial={{ x: 200, opacity: 0 }} // start from the right
+            initial={{ x: 100, opacity: 0 }} // start from the right
             whileInView={{ x: 0, opacity: 1 }} // slide in to position
             transition={{ duration: 1, delay: 0.5 }} // Match your timing
             viewport={{ once: true, amount: 0.3 }} // trigger when 30% visible, once only

@@ -1,8 +1,9 @@
 
 .contact{
+    overflow-x: hidden;
     &__content{
         padding: 20px;
-
+      
         &__header-text{
             color: var(--yellow-theme-sub-text-color);
             display: inline-block;

@@ -46,6 +46,7 @@ a:hover {
 }
 
 .timeline {
+
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   width: 100%;
@@ -94,4 +95,13 @@ a:hover {
     display: flex;
     justify-content: space-between;
   }
+}
+@media only screen and (max-width:480px){
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+     padding: 0;
+    
+    }
 }

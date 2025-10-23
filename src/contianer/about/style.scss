@@ -66,7 +66,6 @@
         margin-bottom: 1rem;
       }
       &__innerContent {
-        border: 2px solid red;
         margin: auto;
         width: 350px;
         height: 350px;
@@ -115,9 +114,9 @@
       height: 100%;
 
       img {
-        height: 400px;
+        height: 300px;
         object-fit: cover;
-        width: 400px;
+        width: 300px;
         border-radius: 50%;
         align-self: center;
         border: 1.5px solid var(--yellow-theme-main-color);
@@ -154,6 +153,14 @@
           120%
         );
       }
+    }
+  }
+}
+
+@media only screen and (max-width:480px){
+  .about {
+    h3{
+      font-size: 1.5rem;
     }
   }
 }
