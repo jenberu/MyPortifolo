@@ -42,7 +42,7 @@ const NavBar = () => {
     <div>
       <nav className="navbar">
         <div className="navbar__continar">
-          <Link to={"/MyPortifolo"} className="navbar__continar__logo">
+          <Link to={"/"} className="navbar__continar__logo">
             <FaHome size={30} />
           </Link>
         </div>
